@@ -13,13 +13,18 @@
         justify-content: space-around;
         align-items: flex-end;
     }
-    ul{
+    .u1{
         display: flex;
         flex-direction: row;
     }
-    li{
+    .l1{
         list-style-type: none;
         margin: 5px;
+    }
+    .l2{
+        background-color: white;
+        flex-direction: column;
+
     }
     .img1{
         width: 200px;
@@ -74,25 +79,25 @@
     .d3{
         background-color: purple;
         color: black;
-        margin-left: 30px;
+        margin-left: 40px;
         padding-top: 10px;
         padding-bottom: 30px;
-        width: 400px;
+        width: 350px;
         margin: 1px;
         
     }
     .d4{
         background-color: purple;
-        width: 400px;
-        margin: 5px;
+        width: 350px;
+        margin: 0px;
     }
     .d5{
         background-color: white;
         color: black;
-        margin: 5px;
-        width: 400px ;
+        margin: 0px;
+        width: 350px ;
         box-shadow: inset 0px 0px 20px 5px rgba(128, 128, 128, 0.685);
-        padding: 30px 10px 70px 10px;
+        padding: 30px 10px 50px 10px;
     }
     .for3{
         display: flex;
@@ -105,7 +110,7 @@
         
     }
     .wec{
-        border-left: 3px solid orange;
+        border-left: 4px solid orange;
     }
      .for4{
            background-color: white;
@@ -114,26 +119,40 @@
            flex-direction: row;
            justify-content: flex-end;
            align-items: flex-end;
+           padding: 0px;
+           margin: 0px;
+           border: 1px solid black;
+           width: fit-content;
+           margin-left: 300px;
+           
 
            
     }
     .houz{
-        margin: 0px;
+        margin-right: 0px;
         padding: 5px;
         background-color: white;
-        display: inline;
+        margin-top:20px ;
+        margin-left: 5px;
+        margin-bottom: 30px;
+        
     }
     .s2{
-        margin: opx;
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
         padding: 5px;
         background-color: white;
-        display: inline;
+        
+    
     }
     .s3{
-        margin: 0px;
+        margin-top: 15px;
+        margin-left: 0px;
+        margin-right: 0px;
         background-color: white;
         padding: 5px;
-        display: inline;
+        margin-bottom: 30px;
     }
     .img4{
         width: 100px;
@@ -146,26 +165,49 @@
     .img6{
         width: 100px;
         height: 100px;
-    }/**
+    }
+    .r1{
+        margin-top: 0px;
+        margin-bottom: 115px;
+        margin-right: 8px;
+    }
+    .B1{
+        border: 3px groove gray;
+        background-color: black;
+        color: white;
+    }
+    a:hover{
+        background-color: blue;
+        color: black;
+    }
+    a:link{
+        border: 2px groove gray;
+        background-color: black;
+        color: white;
+    }
+    /**
     ul{
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         align-items: flex-end;
     }**/
+    .f1{
+        margin-left: 5px;
+    }
 
 </style>
 <body>
     <div>
         <div class="d1">
             <img src="FCMB.png" class="img1" >
-            <ul>
-                <li>HOME</li>
-                <li>About us</li>
-                <li>Contact us</li>
-                <li>Product service</li>
-                <li>service</li>
-                <li>Google</li>
+            <ul class="u1">
+                <li class="l1">HOME</li>
+                <li class="l1">About us</li>
+                <li class="l1">Contact us</li>
+                <li class="l1">Product service</li>
+                <li class="l1">service</li>
+                <li class="l1">Google</li>
             </ul>
         </div>
         <div class="d2">
@@ -174,7 +216,7 @@
              Online Business Banking 
             </div>
         </div>
-        <div>
+        <div class="f1">
             <div class="wec">
             <h2>Welcome To</h2>
             <h1>FCMB Online</h1><br><br>
@@ -216,32 +258,35 @@
         </span>
         </div>
         <div class="for4">
-            <div style="background-color: orange;font-size:20px;font-weight:bold;width:250px;padding:20px 10px 20px 10px;">
+            <div class="r1" style="background-color: orange;font-size:20px;font-weight:bold;width:250px;padding:20px 10px 20px 10px;">
                 Putting your<br>banking needs<br>first
             </div>
             <div class="houz">
                 <img src="houz.jpg"  class="img4"><br>
-                <ul>
-                    <li>Where to find a branch</li>
-                    <li>Where to find atm</li>
+                <ul class="u2">
+                    <li class="l2">Where to find a branch</li>
+                    <li class="l2">Where to find atm</li>
                 </ul>
                 
             </div>
             <div class="s2">
                 <img src="mouse.jpg" class="img5" ><br>
-                <ul>
-                    <li>Open an account online</li>
-                    <li>Make payment online</li>
-                    <li>E-statements</li>
-                    <li>How to use the internet banking</li>
+                <ul class="u2">
+                    <li class="l2">Open an account online</li>
+                    <li class="l2">Make payment online</li>
+                    <li class="l2">E-statements</li>
+                    <li class="l2">How to use the internet banking</li>
                 </ul>
             </div>
             <div class="s3">
                 <img src="telphone.jpg" class="img6" >
-                <ul>
-                    <li>Telephone banking</li>
-                    <li>Send us feedback by mail</li>
+                <ul class="u2">
+                    <li class="l2">Telephone banking</li>
+                    <li class="l2">Send us feedback by mail</li>
                 </ul>
+            </div>
+            <div>
+                <a href="Assign2.html">BACK</a>
             </div>
         </div>
     </div>
