@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-decoration: line-through;
+        }
+        .fc{
+            width: 300px;
+            height: 400px;
+            overflow: scroll;
+        }
+        .universal>button{
+            background-color: black;
+            color: white;
+        }
+        .universal{
+            background-color: grey;
+        }
+        /*descendant selector*/
+        .descendant{
+            background-color: blue;
+        }
+        .descendant button{
+            border: 3px ridge black;
+            padding: 2px;
+            border-radius: 10px 0px;
+            background-color: aqua;
+        }
+        /*grouping selector*/
+
+        p,input{
+            padding: 30px;
+        }
+        .universal~p{
+           color: green; 
+        }
+        .universal+p{
+            color: brown;
+        }
+        .sue button:hover{
+            color: green;
+            margin: 0 10px;
+            padding: 5px;
+        }
+        .sue button:nth-child(odd){
+            background-color: palevioletred;
+            
+        }
+        .sue button:nth-child(even){
+            background-color: blue;
+        }
+        .SM h1::first-letter{
+                  color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="fc">
+        <img src="FCMB.png" alt="">
+    </div>
+    <div class="universal">
+        <button>LOGIN AND OUT</button>
+        <div>
+            <div>
+                <p>
+                    fovb vbkjygf cvbnnf fcvb hhfbygc cnauygacd chgdyag
+                    vcbhcduy cbuhd7yh cvjhs8yh gjchusyhd fgcjhu8chy
+                </p>
+                
+            </div>
+        </div>
+        <div>
+            <div>
+                <button>
+                    LOGIN
+                </button>
+                <p> lonely at d top gben gben gben</p>
+                <input type="text">
+            </div>
+        </div>
+        <p>fffhu bvjhfn nkckduhf jncuuhvuh jfrufh cvjhy jfeaguy bftgu
+            gtyhgbgc  cuygu8gf gvuhrg gffitr5 futreds tcrdcff5 drg cgy 
+            gvhftdc rcvb cvbhgfd cvbnhgb hgfytfgv hyfkftfc ftfngyuf
+        </p>
+        <h1>SELECTOR</h1>
+        <p>fnij mkhfffe kchrhfj nrjg8ujr cnuhfju jiefj8 fiju8ure8 fh88uj
+            vfh hrfhru bfjhurh rbhbr
+        </p>
+    </div>
+    <p>tctf tfrtf tfr tct tfdr5t  vhdgb cheg7gbyfg
+        gfystgfd6ydecb fegbfeygfgebhfg7yg gygh7yeygyu
+        gxyygbdshceyug ech7e bcuheuhee egbygy
+    </p>
+    <h1>SELEDC</h1>
+    <P>NBFJHVU BCDJHU JCNUHU BXJDCUH BCHDUB
+        BDJCHUDYGH HBJCDHUGB BCDJHE HEBDYGC
+        BNBURHF DBCJHURD BVJFHDUHR DHBCFUER
+    </P>
+    <h2>spider man</h2>
+    <p> asxvtg vfywrfd hgwd6segdb
+         nvdgyhbrdyh chjdyhhc hbcu
+    </p>
+        <div class="descendant">
+            <button>LOGIN AND OUT</button>
+            <div>
+                <div>
+                    <p>
+                        fovb vbkjygf cvbnnf fcvb
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <button>
+                        LOGIN
+                    </button>
+                    <p> lonely at d top gben gben gben</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div>
+            <!-- psuedo & selector-->
+            <div class="sue">
+                <button>submit</button>
+                <button>submit</button>
+                <button>submit</button>
+                <button>submit</button>
+                <button>submit</button>
+
+            </div>
+            <div class="SM">
+            <h1> SPIDER MAN</h1>
+            </div>
+        </div>
+    </body>
+</html>
