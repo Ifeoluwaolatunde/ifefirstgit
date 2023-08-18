@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+       /** @keyframes good{
+            from{
+                background-color:blue;
+                padding:30px;
+                transform: translate(20px 10px);
+
+            }
+            to{
+                background-color: aqua;
+                padding: 50px;
+                transform: translate(10px 15px);
+            }
+        }
+        button{
+            animation-name: good;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            background-color: blueviolet;
+        }**/
+
+        .b1{
+            /**transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out ;
+            transition-delay: 0s;**/
+            transition: all 2s ease-in-out 0s;
+            background-color: palegreen;
+            border: 3px dotted green;
+            padding: 20px;
+        }
+        .b1:hover{
+            background-color: pink;
+            padding: 40px;
+            border-radius: 20px;
+            margin-left: 80px;
+            border: 10px dashed red;
+        }
+        .b2{
+            /**transform: translate(100px,200px);
+            transform: translateX(100px);
+            transform: translateY(200px);
+            transform: rotate(60deg);
+            transform: scale(4);**/
+            transform: skewX( 20deg);
+        }
+    </style>
+</head>
+<body>
+    <button class="b1">SUBMIT</button><br>
+    <button class="b2">login</button>
+</body>
+</html>

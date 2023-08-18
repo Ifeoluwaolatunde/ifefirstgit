@@ -6,21 +6,53 @@
     <style>
         a:link{
             background-color: black;
-            color: white;
+            color:peru;
+            padding: 10px;
         }
         a:hover{
             background-color: black;
             color: aqua;
+            padding: 10px;
+        }
+        @keyframes mama{
+            from{
+                background-color: pink;
+                padding-left: 0px;
+            }
+            to{
+                background-color: purple;
+                padding-right: 400px;
+            }
+        }
+        h1{
+           animation-name: mama;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out ;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: forwards;
+            background-color: black;
+            border: 3px inset gray;
+            text-align: center;
+        }
+        .d{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
         }
     </style>
     
     <body>
+        <h1>WELCOME</h1>
+        <div class="d">
         <a href="project.html"> First Assignment</a>
         <a href="Assign2.html"> Second Assignment</a>
-        <a href="trans.html"> ANOTHER PAGE</a>
+        <a href="trans.html"> Assignment2b</a>
         <a href="smile.html">Assignment3</a>
         <a href="tableprac.html">Assignment4a</a>
         <a href="ludo.html">4b</a>
+        <a href="move.html">Assignment5</a>
+        </div>
         
     </body>
 </html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes ball{
+            from{
+                margin: 0px;
+                transform:rotate(0deg) ;
+                margin-left: 500px;
+            }
+            to{
+                margin-top: 500px;
+                margin-left: 500px;
+                transform: rotate(360deg);
+                
+            }
+           
+        }
+        img  {
+            border-radius: 100%;
+            width: 250px;
+            height: 250px;
+            animation-name: ball;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        .d{
+            display: flex;
+            flex-direction: row;
+            background-color: black;
+            box-shadow: inset 0px 0px 5px black;
+            width: 700px;
+        }
+    </style>
+</head>
+<body>
+   <div class="d">
+    <a href="project.html"> First Assignment</a>....
+
+    <a href="Assign2.html"> Second Assignment</a>
+    ...
+    <a href="trans.html"> ANOTHER PAGE</a>
+    ...
+    <a href="smile.html">Assignment3</a>
+    ...
+    <a href="tableprac.html">Assignment4a</a>
+    ..
+    <a href="ludo.html">4b</a>
+    </div>
+    <img src="marble.png" >
+</body>
+</html>
